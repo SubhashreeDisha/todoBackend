@@ -217,6 +217,6 @@ const server = http.createServer((req, res) => {
 //connect to mongodb
 connectToDB();
 
-server.listen(process.env.PORT, process.env.HOST, () => {
+server.listen(process.env.PORT, () => {
   console.log(`http://${process.env.HOST}:${process.env.PORT}`);
 });
